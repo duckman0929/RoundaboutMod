@@ -1006,4 +1006,11 @@ public class ForgeEntities {
                             clientTrackingRange(10).
                             build(new ResourceLocation(Roundabout.MOD_ID, "ph_capsule").toString())
             );
+       public static final RegistryObject<EntityType<TattooYouCloneEntity>> TATTOO =
+            ENTITY_TYPES.register("tattoo_you_clone", () ->
+                    EntityType.Builder.<TattooYouCloneEntity>of(TattooYouCloneEntity::new, MobCategory.MISC).
+                            sized(TattooYouCloneEntity.eWidth, TattooYouCloneEntity.eHeight).
+                            clientTrackingRange(10).
+                            build(new ResourceLocation(Roundabout.MOD_ID, "tattoo_you").toString())
+            );
 }
